@@ -1,0 +1,58 @@
+
+<br><br>
+<div class="section-title">
+  <h1>Gallery</h1>
+</div>
+<div class="gallery" *ngIf="photoview">
+<!-- <div class="section-title">
+    <h1>Gallery</h1>
+  </div> -->
+  <section class="container">
+    <div class="box">
+      <div class="dream">
+        <img src="../../../assets/gallery2.jpg" />
+        <img src="../../../assets/gallery3.jpg" />
+        <img src="../../../assets/gallery4.jpg" />
+        <img src="../../../assets/gallery5.jpg" />
+      </div>
+  
+      <div class="dream">
+        <img src="../../../assets/gallery7.jpg" />
+        <img src="../../../assets/gallery8.jpg" />
+        <img src="../../../assets/gallery9.jpg" />
+      </div>
+  
+      <div class="dream">
+        <img src="../../../assets/gallery6.jpg" />
+        <img src="../../../assets/gallery11.jpg" />
+        <img src="../../../assets/gallery10.jpg" />
+      </div>
+    </div>
+  </section>
+  <div class="inputbutton" (click)="onCard()">
+                  <button class="btn">Less</button>
+              </div>
+</div>
+
+<div class="container" *ngIf="cardview">
+  <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="card" (click)="onPhoto()">
+              <img src="../../../assets/gallery2.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="card-title">
+                  <h4>A visit By Shri H.K.Patil</h4>
+                </div>
+                  <p class="card-text">
+                      The great day with Shri H.K.Patil Minister of Law, Parliamentary affairs and Legislation of Karnataka, reviewing our<strong> High-tech E-Cart</strong>
+                      <br> <strong>Venue</strong> : Emileage initiative Hubli Office
+                  </p>
+              </div>
+              <!-- <div class="inputbtn" (click)="onPhoto()">
+                  <button class="btn">More</button>
+              </div> -->
+          </div>
+      </div>
+  
+  </div>
+</div>

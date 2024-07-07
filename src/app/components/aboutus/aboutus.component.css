@@ -1,0 +1,144 @@
+.container{
+    line-height: 1.9;
+    background-color: #fff;
+  }
+  h2 {
+    color: #309b0b;
+    font-weight: bold;
+  }
+  .aboutus{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+  .aboutus p{
+    text-align: center;
+    justify-content: center;
+  }
+  .section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+    transition: 0.5s all ease;
+  }
+  
+  .section-title h1 {
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    position: relative;
+  }
+  
+  .section-title h1::before {
+    content: '';
+    left: 30%;
+    position: absolute;
+    height: 3px;
+    right: 32%;
+    background-color: #309b0b;
+    bottom: -5px;
+  }
+  .mission{
+    padding: 20px;
+    padding-right: 35px;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .section-mission{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  .imagem{
+    position: relative;
+    padding:0 60px;
+  
+  }
+  .imagem img{
+    max-width: 70vh;
+  }
+  .imagev{
+    position: relative;
+    padding: 80px;
+  }
+  .imagev img{
+    max-width: 40vh;
+  }
+  .vision{
+    padding-top: 100px;
+    padding: 20px;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .section-vision{
+    margin: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media(max-width:992px){
+    .container{
+      height: 100%;
+      width: auto;
+      flex-direction: column;
+      font-size: small;
+    }
+    .aboutus{
+      padding: 15px;
+    }
+  
+    .section-mission{
+     padding: 25px;
+      flex-direction: column;
+    }
+    .mission{
+      width: 100%;
+      height: auto;
+    }
+    .vision{
+      width: 100%;
+      height: auto;
+    }
+  
+    .imagem{
+      padding: 30px 0 0 0 ; 
+      width: 100%;
+      margin: 0;
+      justify-content: center;
+    }
+  
+    .imagem img{
+      width: 100%;
+      height: auto;
+    }
+  
+    .imagev{
+      padding: 30px 0 0 0 ; 
+      width: 100%;
+      margin: auto;
+      justify-content: center;
+    }
+  
+    .imagev img{
+      width: 100%;
+      height: auto;
+    }
+    .section-vision{
+      flex-direction: column-reverse;
+    }
+  }
+  
+  

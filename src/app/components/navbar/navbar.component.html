@@ -1,0 +1,78 @@
+<section>
+  <div class="menu-btn" *ngIf="menuBtnView" (click)="onClickMenu()">
+    <i class="fa fa-bars"></i>
+  </div>
+  <div class="side-bar" *ngIf="sideBarView">
+    <div class="close-btn" (click)="onClickClose()">
+      <i class="fa fa-times"></i>
+    </div>
+    <div class="menu">
+      <div class="item">
+        <a routerLink="home" (click)="onClickClose()">Home</a>
+      </div>
+      <div class="item">
+        <a routerLink="about" (click)="onClickClose()">About Us</a>
+      </div>
+      <div class="item">
+        <a routerLink="team" (click)="onClickClose()">Our Team</a>
+      </div>
+      <div class="item">
+        <a routerLink="awards" (click)="onClickClose()">Awards</a>
+      </div>
+      <div class="item">
+        <a routerLink="newsroom" (click)="onClickClose()">News Room</a>
+      </div>
+      <div class="item" (click)="onClickProducts()">
+        <a class="sub-btn"
+          >Products <i class="fa fa-caret-down dropdown"></i
+        ></a>
+        <div class="sub-menu" *ngIf="productsView">
+          <a routerLink="eelbike" class="sub-item" (click)="onClickClose()"
+            >EEL-Bike</a
+          >
+          <a routerLink="ecart" class="sub-item" (click)="onClickClose()"
+            >Smart EV-Cart</a
+          >
+        </div>
+      </div>
+      <div class="item">
+        <a routerLink="contactus" (click)="onClickClose()">Contact Us</a>
+      </div>
+      <div class="item">
+        <a *ngIf="service.isLoggedin()" routerLink="customer" (click)="onClickClose()">Appointments</a>
+      </div>
+      <div class="item">
+        <a *ngIf="service.isLoggedin()" routerLink="home" (click)="logout()">Logout</a>
+      </div>
+    </div>
+  </div>
+  <a routerLink=""><img class="small" src="../../assets/ev4.png" /></a>
+</section>
+
+<!-- <div class="collapse navbar-collapse  justify-content-end" id="collapsibleNavId">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link " routerLink="home" aria-current="page">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about">About Us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownId">
+          <a class="dropdown-item" routerLink="product">Eel-Bike</a>
+          <a class="dropdown-item" href="#">E-Cart</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="contactus">Contact us</a>
+      </li>
+    </ul>
+  </div> -->
+
+<!-- 
+<div class="container-fluid">
+  <video autoplay muted loop class="clip">
+      <source src="../../../assets/v1.mp4" type="video/mp4">
+  </video>
+</div> -->

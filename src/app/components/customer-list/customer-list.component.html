@@ -1,0 +1,50 @@
+<br><br><br>
+
+
+<div class="container-fluid"style="overflow-x:auto;" > 
+    <table class="table table-bordered" >
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">Name</th>
+          <th scope="col">PhoneNumber</th>
+          <th scope="col">Email</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of userdata">
+          <th scope="row">{{user.customerId}}</th>
+          <td>{{user.name}}</td>
+          <td>{{user.phoneNumber}}</td>
+          <td>{{user.email}}</td>
+          <td>
+            <!-- <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" [checked]="user.approved == 'true'" (change)="Getapproved()">
+              <label class="form-check-label" for="flexSwitchCheckChecked">{{user.approved?'Approved':'UnApproved'}}</label>
+            </div> -->
+              <div class="inputbutton" *ngIf="editabale">
+                <button class="btn" (click)="customerAction(user.customerId, approved)">Approve</button>
+                <button class="btn" (click)="customerAction(user.customerId, rejected)">Reject</button>
+              </div>
+              <div class="inputbutton"  *ngIf="!editabale" >
+                <button class="btn" (click)="customerAction(user.customerId, edit)">Edit</button><br>
+              </div>
+          </td> 
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="editbuttons">
+      <button class="btn" (click)="onList(edit)">EDIT BOARD</button>
+      <button class="btn" (click)="onList(approved)" >Approved</button>
+      <button class="btn" (click)="onList(rejected)" >Rejected</button>
+    </div>
+    <div class="downloadbuttons">
+      <div class="but">
+        <button class="button" (click)="onBackupDownload()"><i class="fa fa-download"></i>Backup File</button>
+      </div>
+      <div class="but"><button class="button" (click)="onApprovedDownload()"> <i class="fa fa-download"></i>Approved File</button>
+            </div>
+    </div>
+    

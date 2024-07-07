@@ -1,0 +1,82 @@
+
+<body>
+
+  <div class="contact">
+
+      <div class="content">
+            <button (click)="clickk()">check</button>
+          <h2>Get in Touch with us</h2>
+          <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet impedit repellat ab voluptas praesentium similique distinctio non perspiciatis illo qui.</p> -->
+      </div>
+      <div class="container">
+        <!-- <video autoplay muted loop class="clip">
+            <source src="../../../assets/homevideo.mp4">
+        </video> -->
+          <div class="contactInfo">
+              <div class="box">
+                  <div class="text">
+                    <p>If you have any questions, feedback, or would like to discuss how we can assist you, please feel free to get in touch with us. We value your input and are always here to help. You can reach us via the contact form below or by using the contact information provided. We look forward to hearing from you!</p>
+                </div>
+              </div>
+              <div class="box">
+                  <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                  <div class="text">
+                      <h3>Address</h3>
+                      <p>#05 Prashant colony 2nd Cross Vidyanagar,</p>
+                      <p>Hubballi - 580031</p>
+                  </div>
+              </div>
+
+              <div class="box">
+                  <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                  <div class="text">
+                      <h3>Phone number</h3>
+                      <p>+91 6364123433</p>
+                      <p>+91 6362710524</p>
+                  </div>
+              </div>
+
+              <div class="box">
+                  <div class="icon"> <i class="fas fa-envelope"></i></div>
+                  <div class="text">
+                      <h3>Email</h3>
+                      <p>contact@emileageinitiative.com</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="contactForm">
+              <form [formGroup]="contactForm" (ngSubmit)="ProceedContact()">
+                  <h2>Get in Touch</h2>
+                  <div class="inputBox">
+                      <input type="text" required="required" formControlName="name">
+                      <span>Full Name</span>
+                      <div *ngIf="(contactForm.get('name').touched || contactForm.get('name').dirty) && contactForm.get('name').invalid">
+                        <div class="alert alert-danger" *ngIf="contactForm.get('name').errors?.['required']">Name is required</div>
+                      </div>
+                  </div>
+                  <div class="inputBox">
+                      <input type="text" required="required" formControlName="email">
+                      <span>Email</span>
+                      <div *ngIf="(contactForm.get('email').touched || contactForm.get('email').dirty) && contactForm.get('email').invalid">
+                        <div class="alert alert-danger" *ngIf="contactForm.get('email').errors?.['required']">Email is required.</div>
+                        <div class="alert alert-danger" *ngIf="contactForm.get('email').errors?.['email']">Enter a valid Email.</div>
+                      </div>
+                  </div>
+                  <div class="inputBox">
+                      <input type="text" required="required" formControlName="phoneNumber">
+                      <span>Phone Number</span>
+                      <div *ngIf="(contactForm.get('phoneNumber').touched || contactForm.get('phoneNumber').dirty) && contactForm.get('phoneNumber').invalid">
+                        <div class="alert alert-danger" *ngIf="contactForm.get('phoneNumber').errors?.['required']">Phone Number is required</div>
+                        <div class="alert alert-danger" *ngIf="contactForm.get('phoneNumber').errors?.['pattern']">Enter valid 10 digit phone number.</div>
+                  </div>
+                  </div>
+                <div class="but">
+                    <button type="submit" class="btn" [disabled]="contactForm.invalid">Submit</button>
+                </div>
+                 
+              </form>
+          </div>
+      </div>
+  </div>
+</body>

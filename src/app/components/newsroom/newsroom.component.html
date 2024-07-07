@@ -1,0 +1,89 @@
+<br /><br /><br />
+
+<div class="blog-section">
+  <div class="section-content blog">
+    <div class="section-title">
+      <h1>NewsRoom</h1>
+    </div>
+
+    <div class="cards">
+      <div class="card" *ngIf="newsImage1" (click)="onClick1()">
+        <div class="image-section">
+          <img src="../../../assets/news.jpg" alt="" />
+        </div>
+        <div class="article">
+          <h4 class="text-center">Success Story of E-Cart</h4>
+          <p>
+            Emileage initiative's flagship product 'The E-Cart' in media.
+            Highligting the role it plays in the lives of Street Vendors.
+          </p>
+        </div>
+        <!-- <div class="blog-view">
+          <a href="" class="button">Read More</a>
+        </div> -->
+        <!-- <div class="posted-date">
+          <p>Posted on Jan 15 2021</p>
+        </div> -->
+      </div>
+
+      <div class="card" *ngIf="newsImage2" (click)="onClick2()">
+        <div class="image-section">
+          <img src="../../../assets/news2.jpg" alt="" />
+        </div>
+        <div class="article">
+          <h4 class="text-center">E-cart On the Streets of Gadag</h4>
+          <p>
+            Emileage initiative's E-Cart impacting the lives of several street
+            vendors of gadag. A great initiative by Shri H.K.Patil Minister of
+            Law, Parliamentary affairs and Legislation of Karnataka.
+          </p>
+        </div>
+        <!-- <div class="blog-view">
+          <a href="" class="button">Read More</a>
+        </div> -->
+        <!-- <div class="posted-date">
+          <p>Posted on Jan 15 2021</p>
+        </div> -->
+      </div>
+
+      <!-- <div class="card" *ngIf="newsImage3" (click)="onClick3()">
+        <div class="image-section">
+          <img src="../../../assets/news.jpg" alt="" />
+        </div>
+        <div class="article">
+          <h4>Title one</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+            consequuntur repellat minima repudiandae est! Doloribus,
+            consequuntur. Sint, rem repudiandae illum provident soluta eaque
+            ducimus, nihil id facere adipisci delectus temporibus.
+          </p>
+        </div>
+        <div class="blog-view">
+          <a href="" class="button">Read More</a>
+        </div>
+        <div class="posted-date">
+          <p>Posted on Jan 15 2021</p>
+        </div>
+
+      </div> -->
+    </div>
+  </div>
+
+  <div class="fullImage" *ngIf="image1">
+    <span (click)="onClickClose()">&times;</span>
+    <img src="../../../assets/news.jpg" alt="" />
+  </div>
+
+  <div class="fullImage" *ngIf="image2">
+    <span (click)="onClickClose()">&times;</span>
+    <img src="../../../assets/news2.jpg" alt="" />
+  </div>
+
+  <!-- <div class="fullImage" *ngIf="image3">
+    <span (click)="onClickClose()">&times;</span>
+    <img src="../../../assets/news.jpg" alt="">
+  </div> -->
+</div>
+<br />
+<br />

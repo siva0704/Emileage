@@ -1,0 +1,190 @@
+<div class="container-fluid">
+  <video autoplay muted loop class="clip">
+    <source src="../../../assets/ecartvid.mp4" type="video/mp4" />
+  </video>
+</div>
+<br />
+<br />
+
+
+<div class="section-title">
+  <h1>ECART</h1>
+</div>
+<div class="imgSec">
+  <img src="../../../assets/ecartmain.jpg" alt="" />
+</div>
+
+<div class="section-title">
+  <h1>Features</h1>
+</div>
+
+
+<div class="container">
+  <div class="row">
+
+
+    <div class="column">
+      <div class="logos">
+        <div class="logo-img">
+          <img src="../../../assets/gps.png" alt="" />
+        </div>
+        <br>
+        <div class="logo-content">
+          <h2>GPS</h2>
+          <h3>GPS Available</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="logos">
+        <div class="logo-img">
+          <img src="../../../assets/electric-motor.png" alt="" />
+        </div>
+        <br>
+        <div class="logo-content">
+          <h2>Electric Motor</h2>
+          <h3>250 - 600 W</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="logos">
+        <div class="logo-img">
+          <img src="../../../assets/load.png" alt="" />
+        </div>
+        <br>
+        <div class="logo-content">
+          <h2>Pay Load</h2>
+          <h3>200kg - 500kg</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="logos">
+        <div class="logo-img">
+          <img src="../../../assets/battery.png" alt="" />
+        </div>
+        <br>
+        <div class="logo-content">
+          <h2>Battery</h2>
+          <h3>42V , 36AH</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="logos">
+        <div class="logo-img">
+          <img src="../../../assets/speaker.png" alt="" />
+        </div>
+        <br>
+        <div class="logo-content">
+          <h2>Speaker</h2>
+          <h3>Speaker Available</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="logos">
+        <div class="logo-img">
+          <img src="../../../assets/lamp.png" alt="" />
+        </div>
+        <br>
+        <div class="logo-content">
+          <h2>Lighting</h2>
+          <h3>Available</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="logos">
+        <div class="logo-img">
+          <img src="../../../assets/storage.png" alt="" />
+        </div>
+        <br>
+        <div class="logo-content">
+          <h2>Storage Cabin</h2>
+          <h3>200 Litres</h3>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+<br />
+
+
+
+
+<!-- Bank logos -->
+<div class="section-title">
+  <h1>Bank Partners</h1>
+</div>
+<div class="banks">
+  <div class="banks-slide">
+    <img src="../../../assets/canara.png" alt="" />
+    <img src="../../../assets/axis.png" alt="" />
+    <img src="../../../assets/hdfc.png" alt="" />
+    <!-- <img src="../../../assets/icici.png" alt="" /> -->
+    <img src="../../../assets/sbi.png" alt="" />
+    <!-- <img src="../../../assets/saraswat.png" alt="" /> -->
+  
+
+  
+    <img src="../../../assets/canara.png" alt="" />
+    <img src="../../../assets/axis.png" alt="" />
+    <img src="../../../assets/hdfc.png" alt="" />
+    <!-- <img src="../../../assets/icici.png" alt="" /> -->
+    <img src="../../../assets/sbi.png" alt="" />
+    <!-- <img src="../../../assets/saraswat.png" alt="" /> -->
+
+    <img src="../../../assets/canara.png" alt="" />
+    <img src="../../../assets/axis.png" alt="" />
+    <img src="../../../assets/hdfc.png" alt="" />
+    <!-- <img src="../../../assets/icici.png" alt="" /> -->
+    <img src="../../../assets/sbi.png" alt="" />
+    <!-- <img src="../../../assets/saraswat.png" alt="" /> -->
+  
+</div>
+
+<!-- Bank logos -->
+
+<section class="product-wrapper">
+  <div class="product-content">
+    <div class="product-left">
+      <h2 style="color: #274962">Custom made. For you</h2>
+      <h5>Get your's personalized today.</h5>
+      <div class="color-content">
+        <h3 *ngIf="displayYellow" style="color: #274962">Yellow</h3>
+        <h3 *ngIf="displayGreen" style="color: #274962">Green</h3>
+        <h3 *ngIf="displayBlue" style="color: #274962">Blue</h3>
+        <br />
+        <div class="color-groups">
+          <div class="color color-yellow" (click)="onClickYellow()"></div>
+          <div
+            class="color color-green active-color"
+            (click)="onClickGreen()"
+          ></div>
+          <div class="color color-blue" (click)="onClickBlue()"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-right">
+      <img src="../../../assets/yellowecart.jpg" alt="" *ngIf="displayYellow" />
+      <img src="../../../assets/ecart.png" alt="" *ngIf="displayGreen" />
+      <img src="../../../assets/blueecart.jpg" alt="" *ngIf="displayBlue" />
+    </div>
+  </div>
+</section>

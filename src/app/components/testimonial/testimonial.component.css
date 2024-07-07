@@ -1,0 +1,166 @@
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.maincontainer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 75vh;
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.carousel:hover {
+    box-shadow: #309B0B 0px 5px 15px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 450px;
+    max-height: 460px;
+    margin: 0px auto;
+    background-color: #ffff;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+h5{
+    padding: 10px;
+}
+.carouselcaption img:hover {
+    transform: scale(1.1);
+}
+
+.carousel .carouselinner {
+    position: relative;
+    width: 400%;
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.858, 0.01, 0.068, 0.99);
+}
+
+.carouselinner .carouselitem {
+    width: 25%;
+}
+
+.carouselcaption {
+    padding: 40px 50px 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.carouselcaption img {
+    display: inline-block;
+    max-width: 140px;
+    padding: 5px;
+    background-color: #ffff;
+    border: 1px solid #ffff;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.carouselcaption h2 {
+    color: #309B0B;
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.carouselcaption h2 .job-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.carouselcaption p {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.carousel input {
+    display: none;
+
+}
+
+.carousel .indicators {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel .indicators label {
+    position: relative;
+    width: 17px;
+    height: 7px;
+    margin: 0 3px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#indicator1:checked~.indicators label:nth-child(1),
+#indicator2:checked~.indicators label:nth-child(2),
+#indicator3:checked~.indicators label:nth-child(3),
+#indicator4:checked~.indicators label:nth-child(4) {
+    background-color: #309B0B;
+    
+
+}
+
+#indicator1:checked~.carouselinner {
+    transform: translateX(0%);
+}
+
+#indicator2:checked~.carouselinner {
+    transform: translateX(-25%);
+}
+
+#indicator3:checked~.carouselinner {
+    transform: translateX(-50%);
+}
+#indicator4:checked~.carouselinner {
+    transform: translateX(-75%);
+}
+
+
+@media(max-width:768px) {
+    .carouselcaption {
+        padding: 50px 70px 80px;
+    }
+}
+
+@media(max-width:576px) {
+    .carouselcaption {
+        padding: 50px 15px 80px;
+    }
+
+
+    .carouselcaption h2 {
+        font-size: 20px;
+    }
+
+    .carouselcaption h2 .job-title {
+        font-size: 17px;
+    }
+
+    .carouselcaption p {
+        font-size: 14px;
+    }
+
+}

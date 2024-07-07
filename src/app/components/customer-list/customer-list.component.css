@@ -1,0 +1,68 @@
+
+.container-fluid{
+    flex-wrap: wrap;
+}
+.inputbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  
+  .btn{
+      width: 100px;
+    background: #309b0b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 25px;
+    transition: all ease 0.3s;
+  }
+
+  .downloadbuttons .button{
+  width: 100px;
+  border: 2px solid #309b0b;
+  background: #fff;
+  color: #309b0b;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 25px;
+  transition: all ease 0.5s;
+}
+.btn:hover{
+   background-color: rgb(110, 190, 110);
+}
+.downloadbuttons .button:hover{
+    transform: scale(1.1);
+}
+.but{
+    padding-left: 10px;
+}
+  .editbuttons{
+    border-width: 10px;
+    border-color: #309b0b;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .downloadbuttons{
+    padding: 55px;
+    border-width: 10px;
+    border-color: #309b0b;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+  }
+  @media(max-width:996px){
+    .container-fluid{
+        width: 100%;
+    }
+    .table{
+        width: 100%;
+    }
+  }

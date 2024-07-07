@@ -1,0 +1,56 @@
+section {
+  padding: 0;
+  margin: 0;
+}
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  transition: 0.5s all ease;
+}
+
+.section-title h1 {
+  display: inline-block;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000000;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  list-style: none;
+  line-height: 1.9;
+  font-size: larger;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.container .main-title {
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+.container .main-title h1 {
+  align-items: center;
+  justify-content: center;
+}
+
+.container .content {
+  padding-bottom: 25px;
+}
+
+.container .content p {
+  text-align: left;
+  justify-content: left;
+}
+
+@media (max-width:576px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
